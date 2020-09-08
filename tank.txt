@@ -1,4 +1,4 @@
-x 
+
 Class Tank {
     
     int ammunition = 10;
@@ -6,6 +6,12 @@ Class Tank {
     void shootMainGun(Target target) {
         target.getsShotAt();
         --ammunution;
+    }
+
+    float drivenMeters = 0;
+        
+    void move(int amountToMoveInMeters) {
+        drivenMeters += amountToMoveInMeters;
     }
     
 }
